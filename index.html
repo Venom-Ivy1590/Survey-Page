@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <style>
+    body {
+      background-image: url("https://www.freevector.com/uploads/vector/preview/30426/SummerIceCream_04.jpg");
+      background-repeat: repeat
+    }
+
+    h1,
+    h4 {
+      font-family: Cambria, Georgia, serif;
+      font-size: 24px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      line-height: 26.4px;
+    }
+
+    .survey-submit,
+    .content {
+      text-align: center;
+    }
+    
+    .checkboxes {columns: 50px 4;}
+    .checkboxes {direction: rtl;}
+    .checkboxes {text-align:center;}
+
+    .box {background-color: #9bf2e7;
+         width: 100px
+         height: 100px;}
+    
+  </style>
+
+</head>
+
+<body>
+  <div class="content">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <h1 id="title">What Ice Cream Would You Try?</h1>
+
+    <p id="description">
+      If theres one thing 90% of the beings on this planet have in common, its their liking for ice cream!!!<br><br>
+      We all know the basic flavors (Strawberry,Vanilla, Chocolate) but what about the others? The ones that are beyond
+      basic? Have you ever tried Rasberry Ripple, Tiger Tail or Hokey Pokey?<br><br>
+      There so many flavors in this world, what would you give a try?
+      Let us know who you are and what flavor(s) you would choose! </p>
+  </div>
+  <form id="survey-form">
+    <div class="survey-submit">
+      <label id="name-label">Name:</label>
+      <label for="name"></label><br>
+      <input id="name" type="text" placeholder="Full Name" required>
+
+      <br><br>
+      <label id="email-label">Email:</label>
+      <label for="email"></label><br>
+      <input id="email" type="email" placeholder="Email Address" required>
+
+      <br><br>
+      <label id="number-label">How many flavors do you want to try?</label>
+      <label for="number"></label><br>
+      <input id="number" type="number" min="1" max="23" placeholder="1-23">
+
+      <br><br><br>
+
+      Which flavor would you try first?<br>
+      <select id="dropdown" name="dropdown">
+        <option value="rocky-road">Rocky Road</option>
+        <option value="pistachio">Pistachio</option>
+        <option value="moon mist">Moon Mist</option>
+        <option value="moose tracks">Moose Tracks</option>
+        <option value="rasberry Ripple">Rasberry Ripple</option>
+        <option value="spumoni">Spumoni</option>
+        <option value="rum raisin">Rum Raisin</option>
+        <option value="superman">Superman</option>
+        <option value="tiger tail">Tiger Tail</option>
+        <option value="ube">Ube</option>
+        <option value="tutti frutti">Tutti Frutti</option>
+        <option value="goody goody gum drops">Goody Goody Gum Drops</option>
+        <option value="crab">Crab</option>
+        <option value="biscuit tortoni">Biscuit Tortoni</option>
+        <option value="butter brickle">Butter Brickle</option>
+        <option value="garlic">Garlic</option>
+        <option value="halvah">Halvah</option>
+        <option value="lucuma">Lucuma</option>
+        <option value="mamey">Mamey</option>
+        <option value="oyster">Oyster</option>
+        <option value="rose">Rose</option>
+        <option value="teaberry">Teaberry</option>
+        <option value="hokey pokey">Hokey Pokey</option>
+      </select>
+      <br><br>
+
+      <p> Would you mix the flavors?</p>
+      <input type="radio" value="Yes" name="yes-no">Yes
+      <input type="radio" value="No" name="yes-no">No
+
+      <br><br>
+
+      <p>What flavors would you mix together?</p>
+    </div>
+
+    <div class="checkboxes">
+      <input type="checkbox" value="Hokey Pokey">Hokey Pokey<br>
+      <input type="checkbox" value="Rocky Road">Rocky Road<br>
+      <input type="checkbox" value="Pistachio">Pistachio<br>
+      <input type="checkbox" value="Moon Mist">Moon Mist<br>
+      <input type="checkbox" value="Moose Tracks">Moose Tracks<br>
+      <input type="checkbox" value="Rasberry Ripple">Rasberry Ripple<br>
+      <input type="checkbox" value="Spumoni">Spumoni<br>
+      <input type="checkbox" value="Rum Raisin">Rum Raisin<br>
+      <input type="checkbox" value="Superman">Superman<br>
+      <input type="checkbox" value="Tiger Tail">Tiger Tail<br>
+      <input type="checkbox" value="Ube">Ube<br>
+      <input type="checkbox" value="Tutti Frutti">Tutti Frutti<br>
+      <input type="checkbox" value="Goody Goody Gum Drops">Goody Goody Gum Drops<br>
+      <input type="checkbox" value="Crab">Crab<br>
+      <input type="checkbox" value="Biscuit Tortoni">Biscuit Tortoni<br>
+      <input type="checkbox" value="Butter Brickle">Butter Brickle<br>
+      <input type="checkbox" value="Garlic">Garlic<br>
+      <input type="checkbox" value="Halvah">Halvah<br>
+      <input type="checkbox" value="Lucuma">Lucuma<br>
+      <input type="checkbox" value="Mamey">Mamey<br>
+      <input type="checkbox" value="Oyster">Oyster<br>
+      <input type="checkbox" value="Rose">Rose<br>
+      <input type="checkbox" value="Teaberry">Teaberry<br>
+    </div>
+    <br><br>
+    <div class="survey-submit">
+      <h4>Let us know if there were any flavors you didn't see here! we would <strong>LOVE</strong> to discover more
+        varieties!</h4>
+
+      <textarea class="box" id="text-area" name="text-area" rows="5" cols="70" placeholder="Leave your comments here:"></textarea>
+
+      <br><br><br>
+      <input id="submit" type="submit" value="submit">
+    </div>
+  </form>
